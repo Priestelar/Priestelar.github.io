@@ -1,0 +1,62 @@
+/*make use of @media (max width) */
+
+img {
+  max-height: 100vh; /* Maximum height is the screen height */
+  width: auto; /* Let the width adjust based on the aspect ratio */
+  height: auto; /* Let the height adjust based on the aspect ratio */
+  z-index: 1;
+  position: absolute;
+}
+div {
+  z-index: 2;
+  position: relative;
+}
+
+body {
+    background-color: #EBEBEB;
+    font-family: 'Lato', sans-serif;
+    font-size: large;
+}
+
+body {
+    margin: 0; /* Remove default margins */
+    height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-y: auto; /* Allow vertical scroll */
+    background-size: cover;
+  }
+
+  /* The main container for the quadrants */
+.quadrant-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping */
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+}
+.quadrant-container > div {
+  flex: 1 1 50%; /* Each div takes up half the container width */
+  box-sizing: border-box; /* Include padding and border in width/height */
+  padding: 20px;
+  
+}
+
+@media (max-width: 768px) {
+  .quadrant-container > div {
+    flex: 1 1 100%; /* Stack divs vertically */
+  }
+  body {
+    font-size: small; /* Smaller font size on mobile */
+  }
+}
+
+/* Individual quadrants */
+.quadrant {
+  display: flex; /* Allows centering of content */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  
+  color: #36454F; /* White text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

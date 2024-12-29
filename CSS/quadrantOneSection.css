@@ -1,0 +1,47 @@
+/* Top-left quadrant styling */
+ 
+  /* Motto section styling */
+  .motto-section {
+    text-align: center;
+    max-width: 100%; /* Allow it to take up full width available */
+    padding: 15px;
+    background-color: #e8f5e9;
+    
+    
+    white-space: nowrap; /* Prevent wrapping of the text */
+  }
+  
+  /* Motto text styling */
+  .motto-section p {
+    font-size: 1.2rem; /* Slightly larger text for emphasis */
+    
+    letter-spacing: 2px; /* Add some space between the words */
+    color: #36454F;
+    text-transform: uppercase; /* Uppercase text for style */
+    margin: 0;
+    overflow: hidden; /* Ensure text doesn't overflow */
+    text-overflow: ellipsis; /* Add ellipsis if text overflows */
+  }
+  @media (max-width: 768px) {
+
+    .motto-section {
+      text-align: center;
+      max-width: 100%; /* Allow it to take up full width available */
+      padding: 5px;
+      background-color: #e8f5e9;
+      
+      
+      white-space: nowrap; /* Prevent wrapping of the text */
+    }
+
+    .motto-section p {
+      font-size: .9rem; /* Slightly larger text for emphasis */
+      
+      letter-spacing: .5px; /* Add some space between the words */
+      color: #36454F;
+      text-transform: uppercase; /* Uppercase text for style */
+      margin: 0;
+      overflow: hidden; /* Ensure text doesn't overflow */
+      text-overflow: ellipsis; /* Add ellipsis if text overflows */
+    }
+  }
