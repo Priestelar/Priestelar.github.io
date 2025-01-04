@@ -1,0 +1,35 @@
+.aboutSection {
+  padding: 20px;
+  text-align: center;
+  
+  margin: 10px auto;
+  
+  max-width: 100%; 
+
+  
+}
+
+.headingTwo {
+  font-size: 1.4rem; 
+  margin-bottom: 15px;
+  text-transform: uppercase; 
+}
+
+.quickSummary {
+  padding: 10px;
+  border-radius: 10px; 
+  background: rgba(63, 78, 79, 0.65);
+  font-size: 1rem;
+  line-height: 1.5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 1024px) {
+  .quickSummary {
+    font-size: 1.5rem; 
+    max-width: 60%; 
+    margin: 0 auto; 
+    line-height: 1.6; 
+    word-wrap: break-word; 
+  }
+}

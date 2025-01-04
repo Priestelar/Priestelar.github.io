@@ -1,0 +1,84 @@
+/* Desktop Styles */
+@media (min-width: 768px) {
+    
+    .headingTwo h2 {
+      font-size: 2rem;
+    }
+  
+    .projectsSection .headingTwo h2,
+    .workExperienceSection .headingTwo h2,
+    .educationSection .headingTwo h2,
+    .skillsSection .headingTwo h2 {
+      font-size: 2rem;
+    }
+  
+    
+    .skillsContainer {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .projectContainer,
+    .workContainer,
+    .educationContainer {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      justify-content: space-between; 
+      gap: 20px;
+    }
+
+    .summaryContainer {
+      max-width: 70%; 
+    }
+  
+    
+    .projectsSection,
+    .workExperienceSection,
+    .educationSection,
+    .skillsSection {
+      padding: 40px;
+      max-width: 80%; 
+    }
+  
+    
+    .projectsSection,
+    .workExperienceSection,
+    .educationSection,
+    .skillsSection {
+      margin: 40px auto;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    
+    .projectsSection .headingTwo h2,
+    .workExperienceSection .headingTwo h2,
+    .educationSection .headingTwo h2,
+    .skillsSection .headingTwo h2 {
+      font-size: 2.2rem;
+    }
+  
+    
+    .projectsSection,
+    .workExperienceSection,
+    .educationSection,
+    .skillsSection {
+      max-width: 70%;
+    }
+  
+    
+    .skillsContainer {
+      gap: 30px;
+    }
+  
+    
+    .projectContainer,
+    .workContainer,
+    .educationContainer {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    
+      
+  }
